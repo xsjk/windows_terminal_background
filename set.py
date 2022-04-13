@@ -12,8 +12,6 @@ urls = [d['video']['v1080'] for d in rep_json['configs']['BackgroundImageWC/defa
 data = dict(zip(names.values(),urls))
 pprint(data)
 
-
-
 def download(url,path):
     res = requests.get(url)
     with open(path, 'wb') as f:
