@@ -1,5 +1,4 @@
 import requests,json,os,random
-from pprint import pprint
 config_path = rf"C:\Users\{os.getenv('USERNAME')}\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
 config = json.load(open(config_path))
 print(config['profiles']['list'][0]['backgroundImage'])
